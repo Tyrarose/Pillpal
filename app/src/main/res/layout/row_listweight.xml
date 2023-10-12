@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listweightRowModel" type="com.pillpal.app.modules.calendardatecontent.data.model.ListweightRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_2">
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_height="@dimen/_85pxv"
+            android:layout_marginBottom="@dimen/_21pxv"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="@dimen/_85pxh" style="@style/groupStylebluegray_100cornerRadius">
+            <ImageView android:id="@+id/imageImageSixteen"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_85pxh"
+                android:layout_width="@dimen/_85pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_15pxh}"
+                imageRes="@{@drawable/img_capsuleimage}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_capsuleimage"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnweight"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.69" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowweight"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackweight"
+                    android:layout_height="@dimen/_35pxv"
+                    android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_149pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtWeight"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{listweightRowModel.txtWeight}"
+                        style="@style/txtPoppinsbold16" tools:text="@string/msg_probiotics_250"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtDuration"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{listweightRowModel.txtDuration}"
+                        style="@style/txtIntermedium11" tools:text="@string/msg_daily_for_1_mon"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/imageVolume"
+                    android:layout_height="@dimen/_21pxh"
+                    android:layout_marginBottom="@dimen/_26pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="@dimen/_21pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_volume"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_volume"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowclock1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowclock2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageClock"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_14pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_clock_black_900"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_clock_black_900"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5pxh"
+                        android:layout_weight="0.81"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{listweightRowModel.txtTime}"
+                        style="@style/txtPoppinsbold13_1" tools:text="@string/lbl_09_00_am"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageNotification"
+                    android:layout_height="@dimen/_22pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_83pxh"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_notification"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

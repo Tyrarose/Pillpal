@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="drugInteractionTwoDrugsVM" type="com.pillpal.app.modules.druginteractiontwodrugs.data.viewmodel.DrugInteractionTwoDrugsVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameDruginteractio"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <View android:background="@color/teal_50"
+            android:id="@+id/viewBluebox" android:layout_gravity="start"
+            android:layout_height="match_parent" android:layout_width="match_parent"/>
+        <LinearLayout android:id="@+id/linearColumnlanguage"
+            android:layout_gravity="top|start|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <FrameLayout android:id="@+id/framePillpallogo"
+                    android:layout_height="match_parent" android:layout_width="match_parent">
+                    <View   android:id="@+id/__link_drug_interaction_empty__pillpal_logo"
+                        android:background="@drawable/pillpal_logo"
+                        android:layout_width="56dp"
+                        android:layout_height="30dp" />
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:ellipsize="end"
+                android:layout_gravity="center"
+                android:id="@+id/txtPrice"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{drugInteractionTwoDrugsVM.drugInteractionTwoDrugsModel.txtPrice}"
+                style="@style/txtRobotoromanbold12" tools:text="@string/msg_add_drug_to_che"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lineLineSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:enabled="false"
+
+                android:hint="Tylenol" />
+
+
+
+
+
+
+
+
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAddtwodrugs"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{drugInteractionTwoDrugsVM.drugInteractionTwoDrugsModel.txtAddtwodrugs}"
+                style="@style/txtInterregular12" tools:text="@string/lbl_add_two_drugs"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearCheckinteracti"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleteal_100cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWarfarin"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:singleLine="true"
+                    android:text="@{drugInteractionTwoDrugsVM.drugInteractionTwoDrugsModel.txtWarfarin}"
+                    style="@style/txtPoppinsbold16_1" tools:text="@string/lbl_warfarin"/>
+                <ImageView android:id="@+id/imageMinusCircle"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_157pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_minuscircle"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_minuscircle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearDrug"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleteal_100cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAcetaminophen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:singleLine="true"
+                    android:text="@{drugInteractionTwoDrugsVM.drugInteractionTwoDrugsModel.txtAcetaminophen}"
+                    style="@style/txtPoppinsbold16_1" tools:text="@string/msg_acetaminophen"/>
+                <ImageView android:id="@+id/imageMinusCircleOne"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_minuscircle"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_minuscircle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumncheckInteractions"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_46pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCheckInteractions"
+                    style="@style/btnSolidRounded_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_12pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_12pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_check_interacti"
+                    android:textAllCaps="false"
+                    tools:text="@string/msg_check_interacti" />
+
+                <LinearLayout android:id="@+id/linearRowclear"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnClear"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_clear"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_clear"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnLoadExample"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:paddingBottom="@dimen/_12pxv"
+                        android:paddingEnd="@dimen/_26pxh"
+                        android:paddingStart="@dimen/_25pxh"
+                        android:paddingTop="@dimen/_12pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_load_example"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_load_example"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearWarning"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
+                <ImageView android:id="@+id/imageWarning"
+                    android:layout_height="@dimen/_17pxh"
+                    android:layout_marginBottom="@dimen/_81pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_warning"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_warning"/>
+                <TextView android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_24pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.92"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:text="@{drugInteractionTwoDrugsVM.drugInteractionTwoDrugsModel.txtDescription}"
+                    style="@style/txtInterbold12" tools:text="@string/msg_warning_if_no"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameNavbar"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageSubtract"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_57pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_subtract"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_subtract"/>
+            <LinearLayout android:id="@+id/linearRowuser"
+                android:layout_gravity="top|center"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_72pxh"
+                android:layout_marginStart="@dimen/_65pxh"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageHome"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_35pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_home"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_home"/>
+                <ImageView android:id="@+id/imageCalendar"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_57pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_22pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_calendar"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
+                <ImageView android:id="@+id/imageUser"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_user"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

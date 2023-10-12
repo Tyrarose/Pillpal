@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomethreeVM" type="com.pillpal.app.modules.welcomethree.data.viewmodel.WelcomethreeVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearWelcomeThree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackrectangleone"
+            android:layout_height="@dimen/_420pxv" android:layout_width="match_parent">
+            <View android:background="@color/purple_100"
+                android:id="@+id/viewRectangleOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_410pxh"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_360pxh"/>
+            <ImageView android:id="@+id/imageProfilepic"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_402pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_contacticon3d}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_contacticon3d"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtMyProfile"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_44pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{welcomethreeVM.welcomethreeModel.txtMyProfile}"
+            style="@style/txtRobotoromanregular17" tools:text="@string/lbl_my_profile"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtTrackyourdrug"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:text="@{welcomethreeVM.welcomethreeModel.txtTrackyourdrug}"
+            style="@style/txtRobotoromanregular30" tools:text="@string/msg_track_your_drug"/>
+        <ImageView android:id="@+id/imageGroupThirty"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="@dimen/_104pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group30_bluegray_100"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group30_bluegray_100"/>
+    </LinearLayout>
+</layout>

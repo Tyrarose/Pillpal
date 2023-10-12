@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomeoneVM" type="com.pillpal.app.modules.welcomeone.data.viewmodel.WelcomeoneVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearWelcomeOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStack"
+            android:layout_height="@dimen/_410pxv"
+            android:layout_width="match_parent" style="@style/groupStyleteal_100">
+            <View android:background="@color/purple_100"
+                android:id="@+id/viewRectangleOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_410pxh"
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_360pxh"/>
+            <ImageView android:id="@+id/imagePillpic"
+                android:layout_gravity="bottom|center"
+                android:layout_height="@dimen/_259pxh"
+                android:layout_marginBottom="@dimen/_57pxv"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:layout_marginStart="@dimen/_11pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="@dimen/_337pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image2023100}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image2023100"/>
+        </FrameLayout>
+        <com.asksira.loopingviewpager.LoopingViewPager
+            android:gravity="start"
+            android:id="@+id/imageSliderSliderdrugdruginter"
+            android:layout_height="@dimen/_187pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_width="match_parent" app:autoScroll="true"
+            app:isInfinite="true" app:scrollInterval="5000"/>
+
+        <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+            android:id="@+id/indicatorGroupThirty"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="wrap_content"
+            app:drawable_normal="@drawable/indicator_unselected_bg_bluegray_100_radius_8"
+            app:drawable_selected="@drawable/indicator_selected_bg_teal_100_radius_8"
+            app:indicator_size="@dimen/_15pxh" app:indicator_spacing="@dimen/_27pxh"/>
+    </LinearLayout>
+</layout>

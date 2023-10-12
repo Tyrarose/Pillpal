@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderdrugdruginterModel" type="com.pillpal.app.modules.welcomeone.data.model.ImageSliderSliderdrugdruginterModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumndrugdruginter"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDrugdruginter"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{imageSliderSliderdrugdruginterModel.txtDrugdruginter}"
+            style="@style/txtRobotoromanregular17" tools:text="@string/msg_drug_drug_inter"/>
+        <TextView android:id="@+id/txtCheckreaction"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:text="@{imageSliderSliderdrugdruginterModel.txtCheckreaction}"
+            style="@style/txtRobotoromanregular30" tools:text="@string/msg_check_reaction"/>
+    </LinearLayout>
+</layout>
