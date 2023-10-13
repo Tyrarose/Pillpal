@@ -10,38 +10,52 @@
         <View android:background="@color/teal_50"
             android:id="@+id/viewBluebox" android:layout_gravity="start"
             android:layout_height="match_parent" android:layout_width="match_parent"/>
-        <LinearLayout android:id="@+id/linearColumnlanguage"
+
+        <LinearLayout
+            android:id="@+id/linearColumnlanguage"
+            android:layout_width="match_parent"
+            android:layout_height="646dp"
             android:layout_gravity="top|start|center"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_11pxv"
-            android:layout_marginEnd="@dimen/_20pxh"
             android:layout_marginStart="@dimen/_20pxh"
             android:layout_marginTop="@dimen/_11pxv"
-            android:layout_width="match_parent" android:orientation="vertical">
-            <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarToolbar"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent" app:contentInsetStart="0dp">
-                <FrameLayout android:id="@+id/framePillpallogo"
-                    android:layout_height="match_parent" android:layout_width="match_parent">
-                    <View   android:id="@+id/__link_drug_interaction_empty__pillpal_logo"
-                        android:background="@drawable/pillpal_logo"
+                android:gravity="start"
+                app:contentInsetStart="0dp">
+
+                <FrameLayout
+                    android:id="@+id/framePillpallogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/__link_drug_interaction_empty__pillpal_logo"
                         android:layout_width="56dp"
-                        android:layout_height="30dp" />
+                        android:layout_height="30dp"
+                        android:background="@drawable/pillpal_logo" />
                 </FrameLayout>
             </androidx.appcompat.widget.Toolbar>
-            <TextView android:ellipsize="end"
-                android:layout_gravity="center"
+
+            <TextView
                 android:id="@+id/txtPrice"
+                style="@style/txtRobotoromanbold12"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_20pxh"
                 android:layout_marginTop="@dimen/_38pxv"
-                android:layout_width="match_parent"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_3pxh"
                 android:singleLine="true"
                 android:text="@{drugInteractionEmptyVM.drugInteractionEmptyModel.txtPrice}"
-                style="@style/txtRobotoromanbold12" tools:text="@string/msg_add_drug_to_che"/>
+                tools:text="@string/msg_add_drug_to_che" />
 
 
             <com.google.android.material.textfield.TextInputEditText
@@ -54,30 +68,29 @@
                 android:hint="Tylenol" />
 
 
-
-
-
-            <TextView android:ellipsize="end"
+            <TextView
                 android:id="@+id/txtAddtwodrugs"
-                android:layout_gravity="start"
+                style="@style/txtInterregular12"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_gravity="start"
                 android:layout_marginStart="@dimen/_19pxh"
                 android:layout_marginTop="@dimen/_14pxv"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:ellipsize="end"
                 android:lineSpacingExtra="@dimen/_3pxh"
                 android:singleLine="true"
                 android:text="@{drugInteractionEmptyVM.drugInteractionEmptyModel.txtAddtwodrugs}"
-                style="@style/txtInterregular12" tools:text="@string/lbl_add_two_drugs"/>
+                tools:text="@string/lbl_add_two_drugs" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnCheckInteractions"
                 style="@style/btnSolidRounded"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="@dimen/_17pxv"
+                android:layout_marginRight="20dp"
                 android:ellipsize="end"
                 android:gravity="center"
                 android:lineSpacingExtra="@dimen/_6pxh"
@@ -92,19 +105,20 @@
 
             <LinearLayout
                 android:id="@+id/linearRowclear"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10pxv"
 
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_width="match_parent" android:orientation="horizontal">
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnClear"
                     style="@style/btnSolidRounded_1"
                     android:layout_width="0dp"
-                    android:layout_marginRight="10dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="0.5"
                     android:ellipsize="end"
                     android:gravity="center"
@@ -119,61 +133,75 @@
                     tools:text="@string/lbl_clear" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:ellipsize="end" android:gravity="center"
                     android:id="@+id/btnLoadExample"
+                    style="@style/btnSolidRoundedOutline"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_1pxh"
                     android:layout_weight="0.5"
-                    android:layout_width="0dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
                     android:lineSpacingExtra="@dimen/_6pxh"
-                    android:paddingBottom="@dimen/_12pxv"
-                    android:paddingEnd="@dimen/_26pxh"
                     android:paddingStart="@dimen/_25pxh"
                     android:paddingTop="@dimen/_12pxv"
+                    android:paddingEnd="@dimen/_26pxh"
+                    android:paddingBottom="@dimen/_12pxv"
                     android:singleLine="true"
                     android:text="@string/lbl_load_example"
                     android:textAllCaps="false"
-                    style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_load_example"/>
+                    tools:text="@string/lbl_load_example" />
             </LinearLayout>
-            <LinearLayout android:gravity="end"
+
+            <LinearLayout
                 android:id="@+id/linearWarning"
+                style="@style/groupStylecornerRadius_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_20pxh"
                 android:layout_marginStart="@dimen/_20pxh"
                 android:layout_marginTop="@dimen/_27pxv"
-                android:layout_width="match_parent"
-                android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
-                <ImageView android:id="@+id/imageWarning"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageWarning"
+                    android:layout_width="@dimen/_19pxh"
                     android:layout_height="@dimen/_17pxh"
-                    android:layout_marginBottom="@dimen/_81pxv"
                     android:layout_marginStart="@dimen/_11pxh"
                     android:layout_marginTop="@dimen/_22pxv"
-                    android:layout_width="@dimen/_19pxh"
+                    android:layout_marginBottom="@dimen/_81pxv"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_warning"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_warning"/>
-                <TextView android:id="@+id/txtDescription"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_warning" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    style="@style/txtInterbold12"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_24pxv"
-                    android:layout_marginEnd="@dimen/_16pxh"
                     android:layout_marginStart="@dimen/_9pxh"
                     android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_24pxv"
                     android:layout_weight="0.92"
-                    android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_3pxh"
                     android:text="@{drugInteractionEmptyVM.drugInteractionEmptyModel.txtDescription}"
-                    style="@style/txtInterbold12" tools:text="@string/msg_warning_if_no"/>
+                    tools:text="@string/msg_warning_if_no" />
             </LinearLayout>
-            <ImageView android:id="@+id/imageBbcapcule"
-                android:layout_gravity="center"
-                android:layout_height="@dimen/_80pxh"
-                android:layout_marginEnd="@dimen/_126pxh"
-                android:layout_marginStart="@dimen/_126pxh"
-                android:layout_marginTop="@dimen/_80pxv"
+
+            <ImageView
+                android:id="@+id/imageBbcapcule"
                 android:layout_width="@dimen/_29pxh"
+                android:layout_height="@dimen/_80pxh"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_126pxh"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/_126pxh"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_bbcapcule_white_a700"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_bbcapcule_white_a700"/>
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_bbcapcule_white_a700" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"

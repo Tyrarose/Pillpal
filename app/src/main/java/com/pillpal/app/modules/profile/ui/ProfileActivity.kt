@@ -27,10 +27,7 @@ class ProfileActivity :
       val destIntent = ProfileTwoActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.txtLanguage.setOnClickListener {
-      val destIntent = DrugInteractionEmptyActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
+
   }
 
   private fun setUpSearchViewPrivacypolicyListener(): Unit {
