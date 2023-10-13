@@ -13,7 +13,8 @@ import com.pillpal.app.modules.profiletwo.`data`.viewmodel.ProfileTwoVM
 import kotlin.String
 import kotlin.Unit
 
-class ProfileTwoActivity : BaseActivity<ActivityProfileTwoBinding>(R.layout.activity_profile_two) {
+class ProfileTwoActivity :
+  BaseActivity<ActivityProfileTwoBinding>(R.layout.activity_profile_two) {
   private val viewModel: ProfileTwoVM by viewModels<ProfileTwoVM>()
 
   override fun onInitialized(): Unit {

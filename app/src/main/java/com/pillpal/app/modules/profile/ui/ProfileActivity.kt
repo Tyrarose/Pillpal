@@ -12,7 +12,8 @@ import kotlin.Boolean
 import kotlin.String
 import kotlin.Unit
 
-class ProfileActivity : BaseActivity<ActivityProfileBinding>(R.layout.activity_profile) {
+class ProfileActivity :
+  BaseActivity<ActivityProfileBinding>(R.layout.activity_profile) {
   private val viewModel: ProfileVM by viewModels<ProfileVM>()
 
   override fun onInitialized(): Unit {

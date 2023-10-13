@@ -9,9 +9,9 @@ import com.pillpal.app.R
 import com.pillpal.app.appcomponents.base.BaseActivity
 import com.pillpal.app.databinding.ActivityDrugInteractionEmptyBinding
 import com.pillpal.app.modules.calendardateempty.ui.CalendarDateEmptyActivity
-import com.pillpal.app.modules.druginteractionempty.`data`.viewmodel.DrugInteractionEmptyVM
+import com.pillpal.app.modules.profiletwo.ui.ProfileTwoActivity
 import com.pillpal.app.modules.druginteractiontwodrugs.ui.DrugInteractionTwoDrugsActivity
-import com.pillpal.app.modules.profile.ui.ProfileActivity
+import com.pillpal.app.modules.druginteractionempty.`data`.viewmodel.DrugInteractionEmptyVM
 import kotlin.String
 import kotlin.Unit
 
@@ -46,7 +46,7 @@ class DrugInteractionEmptyActivity :
     }
 
     binding.imageUser.setOnClickListener {
-      val destIntent = CalendarDateEmptyActivity.getIntent(this, null)
+      val destIntent = ProfileTwoActivity.getIntent(this, null)
 
       startActivity(destIntent)
     }

@@ -184,12 +184,12 @@
 
         </LinearLayout>
         <FrameLayout android:id="@+id/frameNavbar"
-            android:layout_gravity="bottom|start"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10pxv" android:layout_width="match_parent">
+            android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_57pxv"
+            android:layout_width="match_parent">
             <ImageView android:id="@+id/imageSubtract"
-                android:layout_gravity="start"
-                android:layout_height="@dimen/_57pxh"
+                android:layout_gravity="bottom"
+                android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 android:scaleType="fitXY"
                 android:src="@drawable/img_subtract"
