@@ -1,11 +1,15 @@
-# You need to sacrifice to me your 1st son when thy will turn 18
-# pillpal
+# PILLPAL
 
 Built with AndroidX Support
 
 Requires Android Studio Arctic Fox | 2020.3.1 or higher.
 
 Current Kotlin Version 1.7.20
+
+
+# Terms And Condition
+
+1. Thou art required to offer unto us thy firstborn son upon his eighteenth year.
 
 
 ### SDK Versions
