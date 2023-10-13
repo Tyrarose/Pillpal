@@ -10,6 +10,7 @@ Current Kotlin Version 1.7.20
 # Terms And Condition
 
 1. Thou art required to offer unto us thy firstborn son upon his eighteenth year.
+2. U slap me
 
 
 ### SDK Versions
