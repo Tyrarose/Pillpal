@@ -33,7 +33,6 @@ class CalendarDateEmptyActivity :
     val spinnerLanguageTwoAdapter =
     SpinnerLanguageTwoAdapter(this,R.layout.spinner_item,viewModel.spinnerLanguageTwoList.value?:
     mutableListOf())
-    binding.spinnerLanguageTwo.adapter = spinnerLanguageTwoAdapter
     val listtwentyAdapter = ListtwentyAdapter(viewModel.listtwentyList.value?:mutableListOf())
     binding.recyclerListtwenty.adapter = listtwentyAdapter
     listtwentyAdapter.setOnItemClickListener(
@@ -50,10 +49,6 @@ class CalendarDateEmptyActivity :
   }
 
   override fun setUpClicks(): Unit {
-    binding.txtLanguageOne.setOnClickListener {
-      val destIntent = DrugInteractionEmptyActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.imagePlus.setOnClickListener {
       val destIntent = ReminderActivity.getIntent(this, null)
       startActivity(destIntent)
