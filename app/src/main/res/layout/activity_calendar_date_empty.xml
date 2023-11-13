@@ -4,23 +4,19 @@
     <data>
         <variable name="calendarDateEmptyVM" type="com.pillpal.app.modules.calendardateempty.data.viewmodel.CalendarDateEmptyVM"/>
     </data>
-    <LinearLayout android:gravity="start"
+
+    <LinearLayout
+        android:gravity="start"
         android:id="@+id/linearColumncar"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/_11pxv"
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStylewhite_A700">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarToolbar"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_10pxh"
-            android:layout_width="match_parent" app:contentInsetStart="0dp">
 
-
-            <FrameLayout android:id="@+id/frameStackcar"
-                android:layout_height="@dimen/_87pxv" android:layout_width="match_parent">
-
-
+            <FrameLayout
+                android:id="@+id/frameStackcar"
+                android:layout_height="@dimen/_87pxv"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_20pxh">
 
                 <ImageView android:id="@+id/imageCar"
                     android:layout_gravity="start"
@@ -32,6 +28,14 @@
                     android:scaleType="fitXY"
                     imageRes="@{@drawable/img_car}"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_car"/>
+
+                <View
+                    android:id="@+id/__link_drug_interaction_empty__pillpal_logo"
+                    android:layout_width="56dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:background="@drawable/pillpal_logo" />
 
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtHiIbs"
@@ -59,131 +63,327 @@
                     android:singleLine="true"
                     android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtLanguage}"
                     tools:text="@string/msg_don_t_forget_to" />
-
             </FrameLayout>
-        </androidx.appcompat.widget.Toolbar>
-        <LinearLayout android:gravity="end"
-            android:id="@+id/linearCalendarDateE"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_13pxv"
-            android:layout_width="match_parent"
-            android:orientation="vertical" style="@style/groupStylewhite_A700">
-            <FrameLayout android:id="@+id/frameStackcarOne"
-                android:layout_height="@dimen/_98pxv"
-                android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_340pxh">
-                <ImageView android:id="@+id/imageCarOne"
-                    android:layout_gravity="end"
-                    android:layout_height="@dimen/_82pxh"
-                    android:layout_marginBottom="@dimen/_7pxv"
-                    android:layout_marginStart="@dimen/_10pxh"
-                    android:layout_marginTop="@dimen/_8pxv"
-                    android:layout_width="@dimen/_71pxh"
-                    android:scaleType="fitXY"
-                    imageRes="@{@drawable/img_car}"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_car"/>
 
-                <LinearLayout android:id="@+id/linearRoweighteen"
-                    android:layout_gravity="bottom|start"
+
+            <TextView
+                android:id="@+id/txtProbiotics"
+                style="@style/txtPoppinsbold19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:singleLine="true"
+                tools:text="@string/lbl_september_2023" />
+
+        <FrameLayout
+            android:id="@+id/frameStackcarOne"
+            android:layout_width="@dimen/_340pxh"
+            android:layout_height="82dp"
+            android:layout_marginStart="@dimen/_10pxh">
+
+
+            <ImageView
+                android:id="@+id/imageCarOne"
+                imageRes="@{@drawable/img_car}"
+                android:layout_width="@dimen/_71pxh"
+                android:layout_height="@dimen/_82pxh"
+                android:layout_gravity="end"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_car" />
+
+            <LinearLayout
+                android:id="@+id/linearRoweighteen"
+                style="@style/groupStylecornerRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearColumneighteen"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10pxh"
-                    android:layout_marginStart="@dimen/_9pxh"
-                    android:layout_marginTop="@dimen/_10pxv"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
-                    <LinearLayout android:gravity="start"
-                        android:id="@+id/linearColumneighteen"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtEighteen"
+                        style="@style/txtRobotoromansemibold20"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_7pxv"
-                        android:layout_marginTop="@dimen/_5pxv"
-                        android:layout_weight="0.08"
-                        android:layout_width="0dp" android:orientation="vertical">
-                        <TextView android:ellipsize="end"
-                            android:id="@+id/txtEighteen"
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:singleLine="true"
-                            android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
-                            style="@style/txtRobotoromansemibold20" tools:text="@string/lbl_18"/>
-                        <TextView android:ellipsize="end"
-                            android:gravity="center_horizontal"
-                            android:id="@+id/txtMon"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_1pxh"
-                            android:layout_marginStart="@dimen/_1pxh"
-                            android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="match_parent"
-                            android:singleLine="true"
-                            android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
-                            style="@style/txtIntersemibold10" tools:text="@string/lbl_mon"/>
-                    </LinearLayout>
-                    <LinearLayout android:gravity="center_horizontal"
-                        android:id="@+id/linearColumnnineteen"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
+                        tools:text="@string/lbl_18" />
+
+                    <TextView
+                        android:id="@+id/txtMon"
+                        style="@style/txtIntersemibold10"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_12pxh"
-                        android:layout_weight="0.16"
-                        android:layout_width="0dp"
-                        android:orientation="vertical" style="@style/groupStylebluegray_900cornerRadius">
-                        <TextView android:ellipsize="end"
-                            android:gravity="center_horizontal"
-                            android:id="@+id/txtNineteen"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_11pxh"
-                            android:layout_marginStart="@dimen/_11pxh"
-                            android:layout_marginTop="@dimen/_5pxv"
-                            android:layout_width="match_parent"
-                            android:singleLine="true"
-                            android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtNineteen}"
-                            style="@style/txtRobotoromansemibold20_1" tools:text="@string/lbl_19"/>
-                        <TextView android:ellipsize="end"
-                            android:id="@+id/txtTue"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_7pxv"
-                            android:layout_marginEnd="@dimen/_11pxh"
-                            android:layout_marginStart="@dimen/_11pxh"
-                            android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="wrap_content"
-                            android:singleLine="true"
-                            android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtTue}"
-                            style="@style/txtIntersemibold10_1" tools:text="@string/lbl_tue"/>
-                    </LinearLayout>
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerListtwenty"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_7pxv"
-                        android:layout_marginStart="@dimen/_13pxh"
-                        android:layout_marginTop="@dimen/_5pxv"
-                        android:layout_weight="0.75"
-                        android:layout_width="0dp"
-                        android:orientation="vertical"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        itemSpace="@{@dimen/_15pxh}" tools:itemCount="2" tools:listitem="@layout/row_listtwenty"/>
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
+                        tools:text="@string/lbl_mon" />
                 </LinearLayout>
-            </FrameLayout>
-            <LinearLayout android:gravity="start"
+
+                <LinearLayout
+                    android:id="@+id/linearColumnnineteen"
+                    style="@style/groupStylebluegray_900cornerRadius"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNineteen"
+                        style="@style/txtRobotoromansemibold20_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtNineteen}"
+                        tools:text="@string/lbl_19" />
+
+                    <TextView
+                        android:id="@+id/txtTue"
+                        style="@style/txtIntersemibold10_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtTue}"
+                        tools:text="@string/lbl_tue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumntwenty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTwenty"
+                        style="@style/txtRobotoromansemibold20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
+                        tools:text="@string/lbl_20" />
+
+                    <TextView
+                        android:id="@+id/txtWed"
+                        style="@style/txtIntersemibold10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
+                        tools:text="@string/lbl_wed" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumntwentyone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTwentyOne"
+                        style="@style/txtRobotoromansemibold20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
+                        tools:text="@string/lbl_21" />
+
+                    <TextView
+                        android:id="@+id/txtThu"
+                        style="@style/txtIntersemibold10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
+                        tools:text="@string/lbl_thu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumntwentytwo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTwentyTwo"
+                        style="@style/txtRobotoromansemibold20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
+                        tools:text="@string/lbl_22" />
+
+                    <TextView
+                        android:id="@+id/txtFri"
+                        style="@style/txtIntersemibold10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
+                        tools:text="@string/lbl_fri" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumntwentythree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTwentyThree"
+                        style="@style/txtRobotoromansemibold20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
+                        tools:text="@string/lbl_23" />
+
+                    <TextView
+                        android:id="@+id/txtSat"
+                        style="@style/txtIntersemibold10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
+                        tools:text="@string/lbl_sat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumntwentyfour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_weight="0.08"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTwentyFour"
+                        style="@style/txtRobotoromansemibold20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtEighteen}"
+                        tools:text="@string/lbl_24" />
+
+                    <TextView
+                        android:id="@+id/txtSun"
+                        style="@style/txtIntersemibold10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtMon}"
+                        tools:text="@string/lbl_sun" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+            <FrameLayout
                 android:id="@+id/linearRowtotake"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_21pxv"
                 android:layout_width="match_parent"
-                android:orientation="horizontal" style="@style/groupStylegreen_1">
+                style="@style/groupStylegreen_1">
 
                 <LinearLayout
                     android:id="@+id/linearColumntotake"
-                    android:layout_width="wrap_content"
-                    android:layout_height="425dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
                     android:layout_marginStart="@dimen/_20pxh"
-                    android:layout_marginTop="@dimen/_31pxv"
-                    android:layout_marginBottom="@dimen/_118pxv"
-                    android:layout_weight="0.9"
+                    android:layout_marginTop="@dimen/_30pxh"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_130pxv"
                     android:orientation="vertical">
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        >
-
+                        android:layout_height="wrap_content">
                         <TextView
                             android:id="@+id/txtToTake"
                             style="@style/txtPoppinsbold24"
@@ -194,19 +394,17 @@
                             android:ellipsize="end"
                             android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtToTake}"
                             tools:text="@string/lbl_to_take" />
-
                         <ImageView
                             android:id="@+id/imagePlus"
                             android:layout_width="@dimen/_31pxh"
                             android:layout_height="@dimen/_31pxh"
-                            android:layout_marginLeft="190dp"
+                            android:layout_marginLeft="210dp"
+                            android:layout_marginTop="5dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/img_plus_white_a700"
                             tools:ignore="ContentDescription"
                             tools:src="@drawable/img_plus_white_a700" />
-
                     </LinearLayout>
-
 
                     <TextView
                         android:id="@+id/txtNothingHere"
@@ -221,76 +419,65 @@
                         android:singleLine="true"
                         android:text="@{calendarDateEmptyVM.calendarDateEmptyModel.txtNothingHere}"
                         tools:text="@string/lbl_nothing_here" />
-
                     <ImageView
                         android:id="@+id/imageBbcapcule"
                         android:layout_width="@dimen/_29pxh"
                         android:layout_height="@dimen/_80pxh"
-                        android:layout_gravity="center"
+                        android:layout_gravity="bottom|center"
                         android:layout_marginStart="@dimen/_106pxh"
-                        android:layout_marginTop="@dimen/_218pxv"
+                        android:layout_marginTop="@dimen/_150pxv"
                         android:layout_marginEnd="@dimen/_106pxh"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_bbcapcule_white_a700"
                         tools:ignore="ContentDescription"
                         tools:src="@drawable/img_bbcapcule_white_a700" />
-
                 </LinearLayout>
 
-            </LinearLayout>
-        </LinearLayout>
-        <FrameLayout android:id="@+id/frameBottombar"
-            android:layout_height="wrap_content" android:layout_width="match_parent">
-            <FrameLayout android:id="@+id/frameStacksubtract"
-                android:layout_height="@dimen/_57pxv" android:layout_width="match_parent">
-                <ImageView android:id="@+id/imageSubtract"
-                    android:layout_gravity="center"
-                    android:layout_height="@dimen/_57pxh"
-                    android:layout_width="@dimen/_360pxh"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/img_subtract"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_subtract"/>
-                <LinearLayout android:id="@+id/linearRowuser"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_10pxv"
-                    android:layout_marginTop="@dimen/_1pxv"
-                    android:layout_width="match_parent" android:orientation="horizontal">
-                    <LinearLayout android:id="@+id/linearRowhome"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_1pxv"
-                        android:layout_weight="0.88"
-                        android:layout_width="0dp" android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/frameNavbar"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_57pxv"
+                    android:layout_width="match_parent">
+                    <ImageView android:id="@+id/imageSubtract"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_57pxh"
+                        android:layout_width="@dimen/_360pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_subtract"
+                        tools:ignore="ContentDescription" tools:src="@drawable/subtract"/>
+                    <LinearLayout android:id="@+id/linearRowuser"
+                        android:layout_gravity="top|center"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_72pxh"
+                        android:layout_marginStart="@dimen/_65pxh"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
                         <ImageView android:id="@+id/imageHome"
                             android:layout_gravity="center"
                             android:layout_height="@dimen/_25pxh"
-                            android:layout_marginStart="@dimen/_80pxh"
-                            android:layout_marginTop="@dimen/_14pxv"
                             android:layout_width="@dimen/_29pxh"
                             android:scaleType="fitXY"
                             android:src="@drawable/img_home"
-                            tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_home"/>
                         <ImageView android:id="@+id/imageCalendar"
-                            android:layout_gravity="center"
                             android:layout_height="@dimen/_35pxh"
-                            android:layout_marginBottom="@dimen/_4pxv"
-                            android:layout_marginStart="@dimen/_54pxh"
-                            android:layout_width="@dimen/_31pxh"
+                            android:layout_marginStart="@dimen/_57pxh"
+                            android:layout_width="@dimen/_35pxh"
                             android:scaleType="fitXY"
                             android:src="@drawable/img_calendar"
                             tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
+                        <ImageView android:id="@+id/imageUser"
+                            android:layout_height="@dimen/_25pxh"
+                            android:layout_marginStart="@dimen/_59pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="@dimen/_25pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_user"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
                     </LinearLayout>
-                    <ImageView android:id="@+id/imageUser"
-                        android:layout_gravity="center"
-                        android:layout_height="@dimen/_25pxh"
-                        android:layout_marginEnd="@dimen/_83pxh"
-                        android:layout_marginStart="@dimen/_56pxh"
-                        android:layout_marginTop="@dimen/_14pxv"
-                        android:layout_width="@dimen/_25pxh"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_user"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
-                </LinearLayout>
+                </FrameLayout>
             </FrameLayout>
-        </FrameLayout>
+        </LinearLayout>
     </LinearLayout>
 </layout>
