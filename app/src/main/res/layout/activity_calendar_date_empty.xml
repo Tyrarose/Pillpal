@@ -462,7 +462,7 @@
                             tools:src="@drawable/img_home"/>
                         <ImageView android:id="@+id/imageCalendar"
                             android:layout_height="@dimen/_35pxh"
-                            android:layout_marginStart="@dimen/_57pxh"
+                            android:layout_marginStart="@dimen/_62pxh"
                             android:layout_width="@dimen/_35pxh"
                             android:scaleType="fitXY"
                             android:src="@drawable/img_calendar"
@@ -479,5 +479,4 @@
                 </FrameLayout>
             </FrameLayout>
         </LinearLayout>
-    </LinearLayout>
-</layout>
+    </layout>
