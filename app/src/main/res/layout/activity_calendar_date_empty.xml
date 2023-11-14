@@ -18,17 +18,6 @@
                 android:layout_width="match_parent"
                 android:layout_marginTop="@dimen/_20pxh">
 
-                <ImageView android:id="@+id/imageCar"
-                    android:layout_gravity="start"
-                    android:layout_height="@dimen/_82pxh"
-                    android:layout_marginBottom="@dimen/_1pxv"
-                    android:layout_marginEnd="@dimen/_10pxh"
-                    android:layout_marginTop="@dimen/_3pxv"
-                    android:layout_width="@dimen/_52pxh"
-                    android:scaleType="fitXY"
-                    imageRes="@{@drawable/img_car}"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_car"/>
-
                 <View
                     android:id="@+id/__link_drug_interaction_empty__pillpal_logo"
                     android:layout_width="56dp"
@@ -83,18 +72,9 @@
             android:id="@+id/frameStackcarOne"
             android:layout_width="@dimen/_340pxh"
             android:layout_height="82dp"
-            android:layout_marginStart="@dimen/_10pxh">
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginEnd="@dimen/_10pxh">
 
-
-            <ImageView
-                android:id="@+id/imageCarOne"
-                imageRes="@{@drawable/img_car}"
-                android:layout_width="@dimen/_71pxh"
-                android:layout_height="@dimen/_82pxh"
-                android:layout_gravity="end"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/img_car" />
 
             <LinearLayout
                 android:id="@+id/linearRoweighteen"

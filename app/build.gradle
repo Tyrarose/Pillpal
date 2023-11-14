@@ -88,6 +88,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx:20.0.2'
     implementation 'com.dhiwise:endless-viewpager:1.0.0'
     implementation 'com.vmadalin:easypermissions-ktx:0.1.0'
+    implementation 'com.github.gastricspark:scrolldatepicker:0.0.1'
 }
 
 
