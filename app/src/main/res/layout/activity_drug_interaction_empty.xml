@@ -4,9 +4,11 @@
     <data>
         <variable name="drugInteractionEmptyVM" type="com.pillpal.app.modules.druginteractionempty.data.viewmodel.DrugInteractionEmptyVM"/>
     </data>
-    <FrameLayout android:id="@+id/frameDruginteractio"
+    <FrameLayout
+        android:id="@+id/frameDruginteractio"
         android:layout_height="match_parent"
-        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        android:layout_width="match_parent"
+        style="@style/groupStylewhite_A700">
         <View android:background="@color/teal_50"
             android:id="@+id/viewBluebox" android:layout_gravity="start"
             android:layout_height="match_parent" android:layout_width="match_parent"/>
@@ -211,7 +213,8 @@
 
 
         </LinearLayout>
-        <FrameLayout android:id="@+id/frameNavbar"
+        <FrameLayout
+            android:id="@+id/frameNavbar"
             android:layout_gravity="bottom|center"
             android:layout_height="@dimen/_57pxv"
             android:layout_width="match_parent">
